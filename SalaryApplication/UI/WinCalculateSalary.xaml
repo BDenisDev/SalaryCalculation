@@ -1,0 +1,30 @@
+﻿<Window x:Class="SalaryApplication.UI.WinCalculateSalary"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalaryApplication.UI"
+        mc:Ignorable="d"
+        Title="Заработная плата" Height="308.607" Width="786.072" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="Должность" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbType" HorizontalAlignment="Left" Margin="125,14,0,0" VerticalAlignment="Top" Width="120" MouseEnter="cbType_MouseEnter"/>
+        <Button x:Name="btSearchType" Content="Найти " HorizontalAlignment="Left" Margin="170,48,0,0" VerticalAlignment="Top" Width="75" Click="btSearchType_Click"/>
+        <Button x:Name="btCancel" Content="Отмена" HorizontalAlignment="Left" Margin="170,73,0,0" VerticalAlignment="Top" Width="75" Click="btCancel_Click"/>
+        <Label x:Name="label1" Content="Вы выбрали сотрудника типа" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Стаж (кол-во лет)" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Дата поступления на работу" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Базовая ставка" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="Годовая зарплата составляет (руб.)" HorizontalAlignment="Left" Margin="10,237,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblType" Content="?" HorizontalAlignment="Left" Margin="230,123,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCountOfYears" Content="?" HorizontalAlignment="Left" Margin="230,149,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEnrollmentDate" Content="?" HorizontalAlignment="Left" Margin="230,180,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblBaseRate" Content="?" HorizontalAlignment="Left" Margin="230,211,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSalary" Content="?" HorizontalAlignment="Left" Margin="230,237,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dgSearchEmpInList" HorizontalAlignment="Left" Margin="375,10,0,0" VerticalAlignment="Top" Height="227" Width="368" SelectionChanged="dgSearchEmpInList_SelectionChanged"/>
+        <Label x:Name="label6" Content="Найдено в БД:" HorizontalAlignment="Left" Margin="608,237,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.559,-0.095"/>
+        <Label x:Name="lbCountOfEmployees" Content="0" HorizontalAlignment="Left" Margin="717,237,0,0" VerticalAlignment="Top"/>
+        <Border x:Name="brdType" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="125,14,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
